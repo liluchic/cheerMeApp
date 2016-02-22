@@ -1,0 +1,15 @@
+/* Style Sheet - Cheer Me App*/
+
+/*
+*********************
+=choose a goal page
+**********************
+*/
+body {background-color:#137d49;}
+nav li a {color: black;
+text-decoration: none;
+}
+
+a:hover {
+	color: white;
+}
