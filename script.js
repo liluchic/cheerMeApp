@@ -12,7 +12,7 @@ alert("Your improved life begins today!");
 
 /*
 *********************
-=form
+= welcome page form
 **********************
 */
 <form>
@@ -38,3 +38,25 @@ alert("Your improved life begins today!");
 */
   </fieldset>
 </form>
+
+
+/*
+*********************
+= checkout page form
+*********************
+*/
+<form>
+//<form action="action_page.php" method="get"> learn about PHP before handaling this part.
+//student's details
+ <fieldset>
+    <legend>checkout</legend>
+ 	 First name:<br>
+  	<input type="text" name="firstname"><br>
+  	Last name:<br>
+  	<input type="text" name="lastname">
+  	Email: <br>
+	<input type="text" name="E-mail">
+  </fieldset>
+ <fieldset>
+  	<legend>achievements: achivement reached</legend>
+<input type="radio" name="achivement" value="achievement unlocked" checked> Good Job!<br>

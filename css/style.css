@@ -6,10 +6,66 @@
 **********************
 */
 body {background-color:#137d49;}
-nav li a {color: black;
-text-decoration: none;
+
+h1 {color:white;}
+
+nav li a {
+  color: white;
+  text-decoration: none;
 }
 
-a:hover {
-	color: white;
+nav li a:hover {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.getInspired {
+height: 200px;
+width: 410px;
+background: url(../img/goal03.png) no-repeat;
+}
+
+.academy {
+  height: 250px;
+  width: 410px;
+  background: url(../img/goal02.png) no-repeat;
+}
+
+.projects {
+    height: 230px;
+    width: 250px;
+    background: url(../img/goal01.png) no-repeat;
+}
+
+.findJob {
+  height: 230;
+  width: 225px;
+  background: url(../img/goal04.png) no-repeat;
+}
+
+.getAhead {
+  /*glasses- to be determined*/
+}
+
+.takepic {
+  /*selfi time! */
+}
+
+.yourProfile {
+/*
++ watch progress bars on all active activity
++ note to selves: make sure progress bar on inactive stuff
+won't show up as 0% progress 'cause thats lame :P
+*/
+}
+
+.takeBreak {
+/*suggestions on what to do to relax
+stretches for instance
+drink something
+*/
+}
+
+.helpTheOthers {
+  /*sign up for different tasks and positions at the organization.
+  this will be added to your profile and gain you points!*/
 }
