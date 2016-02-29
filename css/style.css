@@ -7,7 +7,11 @@
 */
 body {background-color:#137d49;}
 
-h1 {color:white;}
+h1 {color:white;
+text-indent: 543px;
+font: Calibri;
+margin-top: -10px;
+}
 
 nav li a {
   color: white;
@@ -19,26 +23,33 @@ nav li a:hover {
 }
 
 .getInspired {
-height: 200px;
-width: 410px;
-background: url(../img/goal03.png) no-repeat;
+  height: 256.25px;
+  width: 410px;
+}
+/* img for get inspired:*/
+.speaker {
+position: relative;
+width: 100%;
+}
+.getInspired li {
+  position: absolute;
 }
 
 .academy {
-  height: 250px;
-  width: 410px;
+  height: 371.25px;
+  width: 305px;
   background: url(../img/goal02.png) no-repeat;
 }
 
 .projects {
-    height: 230px;
-    width: 250px;
+    height: 371.25px;
+    width: 291.25px;
     background: url(../img/goal01.png) no-repeat;
 }
 
 .findJob {
-  height: 230;
-  width: 225px;
+  height: 213.75px;
+  width: 376.25px;
   background: url(../img/goal04.png) no-repeat;
 }
 
@@ -46,7 +57,7 @@ background: url(../img/goal03.png) no-repeat;
   /*glasses- to be determined*/
 }
 
-.takepic {
+.takePic {
   /*selfi time! */
 }
 
