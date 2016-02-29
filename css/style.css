@@ -18,6 +18,10 @@ nav li a:hover {
   text-shadow: 2px 2px 4px #000000;
 }
 
+nav > ul {
+ list-style-type: none;
+}
+
 .getInspired {
 height: 200px;
 width: 410px;
