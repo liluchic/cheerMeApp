@@ -38,19 +38,18 @@ width: 100%;
 .academy {
   height: 371.25px;
   width: 305px;
-  background: url(../img/goal02.png) no-repeat;
+  padding-left: 480px;
+  padding-top: -150px;
 }
 
 .projects {
     height: 371.25px;
     width: 291.25px;
-    background: url(../img/goal01.png) no-repeat;
 }
 
 .findJob {
   height: 213.75px;
   width: 376.25px;
-  background: url(../img/goal04.png) no-repeat;
 }
 
 .getAhead {
