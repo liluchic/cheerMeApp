@@ -39,10 +39,6 @@ alert("Your improved life begins today!");
   </fieldset>
 </form>
 
-
-<img src='img/getInspired.svg' width='410' height='256.25' onmouseover="this.src='img/shadow-getInspired.svg';" onmouseout="this.src='img/getInspired.svg';" />
-
-
 /*
 *********************
 = checkout page form

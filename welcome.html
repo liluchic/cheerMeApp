@@ -22,31 +22,7 @@
 
 	alert("Your improved life begins today!");
 
-<form>
-//<form action="action_page.php" method="get"> learn about PHP before handaling this part.
-//student's details
- <fieldset>
-    <legend>Personal information:</legend>
- 	 First name:<br>
-  	<input type="text" name="firstname"><br>
-  	Last name:<br>
-  	<input type="text" name="lastname">
-  	Email: <br>
-	<input type="text" name="E-mail">
-  </fieldset>
- <fieldset>
-  	<legend>GOALS:</legend>
-<input type="radio" name="goal" value="get inspired" checked> inspiration coming your way!<br>
-  /*	<li>Get inspired</li> //quates that motivate you, onclick. Our current mission
-	<li>She codes academy, Course of study</li>
-	<li>Build a project</li>//for now we can link to the Projects website
-	<li>Find a job</li>
-	<li>Get ahead at your current job</li>
-*/
-  </fieldset>
-</form>
-
- </script>
+</script>
 
 	<!--
 	*********************
@@ -57,65 +33,74 @@
 	<H1>CHOOSE A GOAL</h1>
 <nav>
 	<ul>
-<!--**********-->
-<div class="academy">
-			<li><a href="She_Codes_Academy.html">course of study</a></li>
-			<img class="academy" src="img/academy.svg"
-						onmouseover="this.src='img/shadowAcademy.svg';
-					" onmouseout="this.src='img/academy.svg';" alt="she codes academy">
-</div>
-<!--**********-->
-<div class="projects">
-			<li><a href="http://projects.she-codes.org/">Projects</a></li>
-			<img class="projects" src="img/finishProject.svg"
-						onmouseover="this.src='img/shadowFinishProject.svg';
-					" onmouseout="this.src='img/finishProject.svg';" alt="get a Project on your resume">
-</div>
-<!--**********-->
-		<div class="getInspired" >
-			<li> <a href="Get_inspired.html">Get Inspired</a>
-				<p> Read famouse quates from our leaders</p>
-				<!--quates that motivate you, onclick. Our current mission-->
-				<p> Record a message to your future self </p>
-			</li>
-<img class="speaker" src="img/getInspired.svg"
-			onmouseover="this.src='img/shadow-getInspired.svg';
-		" onmouseout="this.src='img/getInspired.svg';" alt="Get Inspired">
-		</div>
-
-
-
-<!--**********-->
-		<div class="findJob" >
-					<li><a href="#">find job</a></li>
-					<img class="job" src="img/getJob.svg"
-								onmouseover="this.src='img/shadowGetJob.svg';
-							" onmouseout="this.src='img/getJob.svg';" alt="Get a job">
-		</div>
-<!--**********-->
-					<div class="yourProfile" >
-								<li><a href="#">yourProfile</a></li>
-								<img src="img/computer.svg"
+<div class="circle-container" >
+								<a href="#">
+								<img class="yourProfile center" src="img/computer.svg"
 											onmouseover="this.src='img/shadowComputer.svg';
 										" onmouseout="this.src='img/computer.svg';" alt="Your profile">
-					</div>
+										</a>
 <!--**********-->
-					<div class="takepic" >
-								<li><a href="#">Take a pic!</a></li>
-								<img src="img/camera.svg"
+
+
+			<a href="She_Codes_Academy.html">
+			<img class="academy deg270" src="img/academy.svg"
+						onmouseover="this.src='img/shadowAcademy.svg';
+					" onmouseout="this.src='img/academy.svg';" alt="she codes academy">
+					</a>
+
+<!--**********-->
+
+			<a href="http://projects.she-codes.org/">
+			<img class="projects deg225" src="img/finishProject.svg"
+						onmouseover="this.src='img/shadowFinishProject.svg';
+					" onmouseout="this.src='img/finishProject.svg';" alt="get a Project on your resume">
+					</a>
+
+<!--**********-->
+		
+			<a href="Get_inspired.html">
+			<!--	<p> Read famouse quates from our leaders</p>
+				*quates that motivate you, onclick. Our current mission*
+				<p> Record a message to your future self </p> -->
+			
+			<img class="getInspired deg180" src="img/getInspired.svg"
+				onmouseover="this.src='img/shadow-getInspired.svg';
+				" onmouseout="this.src='img/getInspired.svg';" alt="Get Inspired">
+				</a>
+
+
+<!--**********-->
+		
+					<a href="#">
+					<img class="findjob deg135" src="img/getJob.svg"
+								onmouseover="this.src='img/shadowGetJob.svg';
+							" onmouseout="this.src='img/getJob.svg';" alt="Get a job">
+							</a>
+
+
+					
+<!--**********-->
+					
+								<a href="#">
+								<img class="takepic deg90" src="img/camera.svg"
 											onmouseover="this.src='img/shadowCamera.svg';
 										" onmouseout="this.src='img/camera.svg';" alt="Take a picture!">
-					</div>
+										</a>
+					
 <!--**********-->
-					<div class="takeBreak" >
-								<li><a href="#">give me a break</a></li>
-								<img src="img/coffee.svg"
+					
+								<a href="#">
+								<img class="takeBreak deg45" src="img/coffee.svg"
 											onmouseover="this.src='img/shadowCoffee.svg';
 										" onmouseout="this.src='img/coffee.svg';" alt="Take a break">
-					</div>
+										</a>
+					
 <!--**********-->
-					<li><a href="#">Get Ahead</a></li>
-
+					<a href="#"> <img class="getAhead deg315" src="img/glasses.svg" 
+						onmousover="this.src='img/shadowglasses.svg'; 
+						" onmouseout="this.src='img/glasses.svg';" alt="get ahead">
+					</a>
+</div> <!--end of circle-container**********-->
 			</ul>
 		</nav>
 
