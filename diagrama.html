@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js"></script>
+	<script src="http://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+</head>
+<body>
+<canvas id="myChart" width="400" height="400"></canvas>
+
+<script>
+
+var data = {
+    labels: [],
+    datasets: [
+        {
+            label: "My First dataset",
+            fillColor: "rgba(220,220,220,0.5)",
+            strokeColor: "rgba(220,220,220,0.8)",
+            highlightFill: "rgba(220,220,220,0.75)",
+            highlightStroke: "rgba(220,220,220,1)",
+            data: [0]
+        }
+    ]
+};
+
+var ctx = document.getElementById("myChart").getContext("2d");
+//And for a Bar chart
+var myDoughnutChart = new Chart(ctx).Bar(data,{
+    animateScale: true,
+	scaleOverride : true,
+	scaleSteps : 1,
+	scaleStepWidth : 32,
+	scaleStartValue : 0 
+});
+
+function addData() {
+	var val = $(this).val();
+	myDoughnutChart.addData([val], val);
+  // Remove the first point so we dont just add values forever
+  //myDoughnutChart.removeData();
+}
+
+$(document).ready(function() {
+    $('#checkboxArea').append(
+       $(document.createElement('input')).attr({
+           id:    'myCheckbox1'
+          ,name:  'myCheckbox1'
+          ,value: 1
+          ,type:  'checkbox'
+       }).click(addData)
+    );
+	$('#checkboxArea').append(
+		$(document.createElement('label')).attr({
+           id:    'myCheckboxLabel1'
+          ,for:   'myCheckbox1'
+       }).text("lesson #1")
+	);
+	$('#checkboxArea').append($(document.createElement('br')));
+
+
+	for (var i=2; i<33; i++){
+		createCheckbox(i);
+	}
+
+	function createCheckbox(id) {
+		$('#checkboxArea').append(
+		   $(document.createElement('input')).attr({
+			   id:    'myCheckbox' + id
+			  ,name:  'myCheckbox' + id
+			  ,value: id
+			  ,type:  'checkbox'
+			  
+		   }).click(addData)
+		);
+		$('#checkboxArea').append(
+			$(document.createElement('label')).attr({
+			   id:    'myCheckboxLabel' + id
+			  ,for:   'myCheckbox' + id
+		   }).text("lesson #" + id)
+		);
+		$('#checkboxArea').append($(document.createElement('br')));
+	}
+});
+</script>
+
+<div id="checkboxArea">
+
+
+
+</div>
+</body>
+</html>
