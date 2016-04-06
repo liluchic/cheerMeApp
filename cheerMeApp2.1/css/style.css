@@ -1,0 +1,13 @@
+/* css file for cheer me app 2.1 */ 
+
+header #logo {
+	background-image: url(img/logo.svg) no-repeat;
+	width: 174px;
+	height: 23px;
+	margin: 10px 10px 20px;
+	float: left;
+}; 
+
+.aLeader  {
+	display:none;
+};
