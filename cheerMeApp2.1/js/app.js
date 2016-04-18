@@ -26,8 +26,10 @@ GetLeaderFN = function() {
 
 // get the woman's picture to go up the stairs
 $(document).ready(function(){
-	$("#upbox").animate({left: '+=150', bottom: '+=150'}, 4000);
+	$("#upbox").animate({left: '+=300', bottom: '+=300'}, 4000);
 });
+//we want to have the girl go up acocording to steps.
+
 
 //image appears with quate
 // var rand = Math.floor(Math.random()* $('.leaders').length); console.log(rand);

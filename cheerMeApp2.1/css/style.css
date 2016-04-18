@@ -6,7 +6,7 @@ body {
 }
 
 girl.svg {
- color: red;
+
     display: inline-block;
 
 }
@@ -14,5 +14,5 @@ girl.svg {
     width: 150px;
     height: 300px;
     position: relative;
-    border: 2px solid red;
+
 }
