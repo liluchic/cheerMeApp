@@ -22,13 +22,50 @@ GetLeaderFN = function() {
 	console.log(rand);
 	document.getElementById("leaderAppear").innerHTML = rand.firstName + rand.lastName + rand.quate + rand.img;
 	
-};
+}
+// 1. create extra checkboxes
+var nextCheckbox =
+    $(document.createElement('input')).attr({
+        id: 'lesson#' + lessonId,
+        name: 'lesson#' + lessoName,
+        value: 1,
+        type: 'checkbox'
+    });
 
-// get the woman's picture to go up the stairs
-$(document).ready(function(){
-	$("#upbox").animate({left: '+=300', bottom: '+=300'}, 4000);
-});
-//we want to have the girl go up acocording to steps.
+// 2. change the lessons name and id of the new checkbox (which creates more checkboxes~!)
+var isItChecked = document.getElementById("lesson#1").checked;
+if (isItChecked === true) {
+    changeLessonName(); }
+
+// 3. when checkbox is clicked - next checkbox appears:
+document.getElementById("lesson1").addEventListener("click", nextCheckbox);
+checkbox[i].click =+ i++
+//4. event: when checkbox clicked  -
+    var changeLessonName = function() {
+        for(i = 1; i < 33; i++) {
+        lessoName += input.name[i] + "<br>";
+        lessonId += input.id[i] + "<br>";
+        lessonVal += input.value[i] + "<br>";
+    } };
+console.log(changeLessonName);
+// $(document).ready(
+
+//the addCheckbox function:
+/*
+    function addCheckBox() {
+    var val = $(this).val();
+    nextCheckbox.addEventListener(click, addCheckBox);
+    $("checkbox").val(function([val], val))
+    $(checkbox).click(function () {
+        addCheckbox([val], val);
+    })*/
+
+
+
+// get the woman's picture to go up the stairs. (accordind to each step)
+
+var goUp = function(){
+	 $("#upbox").animate({left: '+=300', bottom: '+=300'}, 4000);};
 
 
 //image appears with quate
