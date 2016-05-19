@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leaders Cheers</title>
+</head>
+<body>
+
+</body>
+</html>
+
+  <script>
+
+    var description = new Array("blank", "ruth", "lea", "orit", "rony", "luda");
+    var pictures = new Array(5);
+    var quates = new Array("blank", "ruthsays", "leasay", "oritsay", "ronysay", "ludasay");
+    var counter = 0;
+
+
+    function initialize(){
+      // sets up the array with some startin values
+      // Andy Harris
+      pictures[0] = new Image(50, 50);
+      pictures[0].src = "blank.gif";
+      pictures[1] = new Image(50, 50);
+      pictures[1].src = "img/ruth.jpg";
+      pictures[2] = new Image(50, 50);
+      pictures[2].src = "img/lea.jpg";
+      pictures[3] = new Image(50, 50);
+      pictures[3].src = "img/orit.jpg";
+      pictures[4] = new Image(50, 50);
+      pictures[4].src = "img/rony.jpg";
+      pictures[5] = new Image(50, 50);
+      pictures[5].src = "img/luda.jpg";
+
+    } // end initialize
+
+    function upDate(){
+      //increments the counter and shows the next description
+      counter++;
+      if (counter > description.length){
+        counter = 0;
+      } // end if
+      document.imgDisplay.src = pictures[counter].src;
+      document.myForm.txtDescription.value = description[counter];
+      document.myForm.txtQuates.value = quates[counter];
+    } // end upDate
+
+
+  </script>
+</head>
+
+<body onLoad = "initialize()">
+<center>
+  <h1>leaders cheers<hr></h1>
+  <form name = "myForm">
+    <img src = "blank.gif"
+         name = "imgDisplay"
+         height = 100
+         width = 100>
+    <br>
+
+    <input type = "text"
+           name = "txtDescription"
+           value = "blank">
+    <br>
+    <input type = "text"
+           name = "txtQuates"
+           value = "blank">
+    <br>
+
+    <input type = "button"
+           value = "next"
+           onClick = "upDate()">
+  </form>
+</center>
+<hr>
+</body>
+</html>
