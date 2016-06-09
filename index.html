@@ -1,0 +1,69 @@
+<!doctype html>
+
+<!-- Cheer Me App-->
+
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/style.css"/>
+
+	<script src="http://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+
+	<script src="js/app.js"></script>
+	<!--<script src="js/checkbox.js"></script> -->
+	<title> Cheer me app 2.1 </title>
+       
+
+</head>
+
+<body onLoad = "initialize()">
+ <h1><a href="/"><img src="img/logo_CheerMeApp.png" alt="CheerMeApp"></a></h1>
+    <h5> Welcome Coder!</h5>
+        <!--cheers from our leaders:-->
+	<div id="leaderAppear">
+
+      <h1>leaders cheers</h1>
+      <form name = "myForm">
+        <img src = " "
+             name = "imgDisplay"
+             height = 100
+             width = 100>
+        <br>
+
+        <input type = "text"
+               name = "txtDescription"
+               value = " ">
+        <br>
+        <textarea 
+               name = "txtQuates"
+               
+			   cols = "50"
+			   rows="1"	
+			   > </textarea>
+			  
+        <br>
+
+        <input type = "button"
+               value = "Cheer me!"
+               onClick = "upDate()">
+      </form>
+
+  </div>
+
+    <!--here enters the graph steps with the lady going up:-->
+<div id="upbox"><img src="img/shecodesStairs.png"/>
+</div>
+
+
+
+ <div id="checkboxArea">
+ 
+ <div><h1>Lessons</h1>
+	   <input type="button" value="Add lesson" id="addLesson" onclick="addRow('dataTable')" />
+   <table id="dataTable" width="75px" border="1" >
+       
+   </table> 
+</div>
+</body>
+</html>

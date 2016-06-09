@@ -1,76 +1,46 @@
-/* Style Sheet - Cheer Me App*/
+	/* css file for cheer me app 2.1 */ 
 
-/*
-*********************
-=choose a goal page
-**********************
-*/
-body {background-color:#137d49;}
-
-h1 {color:white;
-text-indent: 543px;
-font: Calibri;
-margin-top: -10px;
+body {
+    background-image: url("../img/stairs.jpg");
+    background-size: 100%;
 }
 
-nav li a {
-  color: white;
-  text-decoration: none;
+.flex-container1 {
+	display: -webkit-flex;
+	display: flex;
+	width: 500px;
+	height: 300px;
+	background-color: green;
 }
+shecodesStairs.png {
+	height: 500px ;
+	width: 250px;
+    display: inline-block;
 
-nav li a:hover {
-  text-shadow: 2px 2px 4px #000000;
 }
-
-.circle-container {
-    position: relative;
-    width: 30em;
-    height: 30em;
-    padding: 2.8em;
-    /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
-    /* border: dashed 1px;change this after understanding */
-    border-radius: 50%;
-    margin: 1.75em auto 0;
-}
-.circle-container a {
-    display: block;
+#upbox {
+    width: 150px;
+    height: 300px;
     position: absolute;
-    top: 50%; left: 50%;
-    width: 4em; height: 4em;
-    margin: -2em;
-}
-.circle-container img { display: block; width: 130%; }
-.deg0 { transform: translate(15em); } /* 12em = half the width of the wrapper */
-.deg45 { transform: rotate(45deg) translate(15em) rotate(-45deg); }
-.deg90 { transform: rotate(90deg) translate(15em) rotate(90deg); }
-.deg135 { transform: rotate(135deg) translate(15em) rotate(-135deg);}
-.deg180 { transform: rotate(180deg) translate(15em) rotate(-180deg); }
-.deg225 { transform: rotate(225deg) translate(15em) rotate(-225deg);}
-.deg270 { transform: rotate(270deg) translate(15em) rotate(-270deg);}
-.deg315 { transform: rotate(315deg) translate(15em) rotate(-315deg);}
-/*
-.takeBreak {
-suggestions on what to do to relax
-stretches for instance
-drink something
-}
-
-.takePic {
-  /*selfi time!
-}
-
-.getAhead {
-  /*glasses- to be determined*/
-}
-
-/*
-+ watch progress bars on all active activity
-+ note to selves: make sure progress bar on inactive stuff
-won't show up as 0% progress 'cause thats lame :P
+	top: 420px;
+	left: 150px;
+	display: flex;
 
 }
 
-.helpTheOthers {
-  /*sign up for different tasks and positions at the organization.
-  this will be added to your profile and gain you points!*/
+#checkboxArea {
+    position: absolute;
+	left: 1150px;
+	top: 0px;
+	display: flex;
+}
+
+#dataTable {
+	font-size: 10px;
+}
+
+
+#quates1 {
+	size: flex;
+	
 }
